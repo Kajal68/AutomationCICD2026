@@ -35,10 +35,10 @@
     </pluginManagement>
   </build>
   
-  
+ 
   </profile>
   
-   <profile>
+  <!--  <profile>
   <id>Practice Test</id>
   
    <build>
@@ -59,7 +59,7 @@
   </build>
   
   
-  </profile>
+  </profile>-->
   </profiles>
   
  
