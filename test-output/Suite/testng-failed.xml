@@ -15,4 +15,15 @@
       </class> <!-- eCommerceSite.EorrorValidation -->
     </classes>
   </test> <!-- Validation Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
+    <classes>
+      <class name="eCommerceSite.PurchaseOrder">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SubmitOrder"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- eCommerceSite.PurchaseOrder -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
