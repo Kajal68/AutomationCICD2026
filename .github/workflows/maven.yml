@@ -30,5 +30,6 @@ jobs:
       uses: dorny/test-reporter@v1
       with:
         name: TestNG Results
-        path: target/surefire-reports/junitreports/TEST-*.xml
-        reporter: java-testng
+        path: target/surefire-reports/TEST-*.xml
+        reporter: java-junit
+
