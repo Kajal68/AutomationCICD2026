@@ -26,10 +26,9 @@ jobs:
       run: mvn clean test -Dtestng=testng
 
     - name: Publish Test Report
-        if: always()
-        uses: dorny/test-reporter@v1
-        with:
-          name: TestNG Results
-          path: target/surefire-reports/junitreports/TEST-*.xml   
-
+      if: always()
+      uses: dorny/test-reporter@v1
+      with:
+        name: TestNG Results
+        path: target/surefire-reports/junitreports/TEST-*.xml
  
