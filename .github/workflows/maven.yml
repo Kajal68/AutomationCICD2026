@@ -23,13 +23,13 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean test -Dtestng=testng
+      run: mvn clean test -DsuiteXmlFile=testng.xml
 
     - name: Publish Test Report
       if: always()
       uses: dorny/test-reporter@v1
       with:
         name: TestNG Results
-        path: target/surefire-reports/TEST-*.xml
+        path: target/surefire-reports/*.xml
         reporter: java-testng
 
